@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+/*Configurações Gerais*/
+
+@media all {
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    padding: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url("empresa/prime-apresentação.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+
+/*Menu Lateral*/
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 225px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.btn-expandir > i {
+    color: goldenrod;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.intens-menu a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 8px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+ul li.intens-menu:hover {
+    background-color: rgba(218, 165, 32, 0.877);
+}
+ul li.intens-menu {
+    transition: 0.3s;
+}
+
+ul li.intens-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.intens-menu a .txt-link:hover {
+    color: black;
+}
+
+ul li.intens-menu a .icone > i {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+}
+
+/*Menu mobile*/
+
+menu {
+    display: none;
+}
+
+
+menu > ul  {
+    display: block;
+    list-style-type: none;
+}
+
+menu > ul > li > a  {
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    transition: .5s;
+    color: white;
+}
+
+menu > ul > li > a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+div.btn-expandir-mobile > i {  
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: goldenrod;
+    padding-left: 10px;
+}
+
+div.btn-expandir-mobile > i:hover{
+    background-color: goldenrod;
+    color: black;
+    transition: .5s;
+}
+
+.icone i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    nav.menu-lateral {
+        display: none;
+    }
+}
+
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+main h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-indent: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    color: black;
+}
+
+main h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-indent: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    color: black;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.img1 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: grey;
+    background-image: url("../imagens/designer-personalizado-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: grey;
+    background-image: url("../imagens/experiencia-usuario-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img3 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: grey;
+    background-image: url("../imagens/desenvolvimento-avancado-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img4 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: grey;
+    background-image: url("../imagens/integracao-midia-social-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img5 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: grey;
+    background-image: url("../imagens/suporte-continuo-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    padding: 30px;
+    max-width: 320px;
+    margin: auto;
+    background-color: black;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+}
+}
+
+/*Configurações Potatio*/
+
+@media screen and (orientation: portrait) {
+    header {
+        padding: 230px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 320px;
+        background-image: url("empresa/logo-prime-retrato-form.jpg");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: black;
+    }
+
+    menu {
+    display: none;
+}
+
+menu > ul  {
+    display: block;
+    list-style-type: none;
+}
+
+menu > ul > li > a  {
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    transition: .5s;
+    color: white;
+}
+
+menu > ul > li > a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+div.btn-expandir-mobile > i {  
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: goldenrod;
+    padding-left: 10px;
+}
+
+div.btn-expandir-mobile > i:hover{
+    background-color: goldenrod;
+    color: black;
+    transition: .5s;
+}
+
+.icone i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    nav.menu-lateral {
+        display: none;
+    }
+    
+}
+
+.img3 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: grey;
+    background-image: url("../imagens/desenvolvimento-avancado-retrato-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+}
+
+/*Configurações Paisagem*/
+
+@media screen and (orientation: landscape) {
+        header {
+        padding: 300px;
+        padding-left: 150px;
+        padding-right: 150px;
+        background-image: url("empresa/prime-apresentação.jpg");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: black;
+    }
+
+    nav.menu-lateral {
+        width: 70px;
+        height: 100%;
+        background-color: rgb(49, 49, 49);
+        padding: 40px 0 40px 1%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+    nav.menu-lateral.expandir {
+        width: 225px;
+    }
+    
+    .btn-expandir {
+        width: 100%;
+        padding-left: 15px;
+    }
+    
+    .btn-expandir > i {
+        color: goldenrod;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    ul {
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    ul li.intens-menu a {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        padding: 8px 4%;
+        display: flex;
+        margin-bottom: 20px;
+        line-height: 40px;
+        color: white;
+    }
+    
+    ul li.intens-menu:hover {
+        background-color: rgba(218, 165, 32, 0.877);
+    }
+    ul li.intens-menu {
+        transition: 0.3s;
+    }
+    
+    ul li.ativo {
+        background-color: goldenrod;
+    }
+    
+    ul li.intens-menu a .txt-link {
+        margin-left: 70px;
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    nav.menu-lateral.expandir .txt-link {
+        margin-left: 40px;
+        opacity: 1;
+    }
+    
+    ul li.intens-menu a .txt-link:hover {
+        color: black;
+    }
+    
+    ul li.intens-menu a .icone > i {
+        font-size: 30px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    menu {
+        display: none;
+    }
+
+    div.btn-expandir-mobile > i{
+        display: none;
+    }
+}
